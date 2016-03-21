@@ -1,0 +1,13 @@
+<div class="col-sm-3">
+    <div class="github-user">
+        <span ng-if="ghc.isLoading">Loading...</span>
+        <div ng-if="!ghc.isLoading">            
+            <img ng-src="{{ ::ghc.user.profile.avatar_url }}" />
+            <h4 class="page-header">{{ ::ghc.user.profile.login }}</h1>
+            <span class="organization" ng-if="ghc.user.profile.company">{{ ::ghc.user.profile.company }}</span>
+            <span class="location" ng-if="ghc.user.profile.location">{{ ::ghc.user.profile.location }}</span>
+            <span class="website" ng-if="ghc.user.profile.blog"><a ng-href="{{ ::ghc.user.profile.blog }}">{{ ::ghc.user.profile.blog }}</a></span>
+            <span class="join-date" ng-if="ghc.user.profile.created_at">Joined on {{ ::ghc.user.profile.created_at | date: 'MMM d, yyyy' }}</span>
+        </div>
+    </div>
+</div>

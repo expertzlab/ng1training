@@ -1,3 +1,7 @@
 import './vendor';
 
-export default angular.module('Application', []);
+import GitHubUserModule from './githubUser/githubUser.module';
+
+export default angular.module('Application', [
+    GitHubUserModule.name
+]);
