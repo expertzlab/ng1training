@@ -1,21 +1,21 @@
 {
   "name": "ng-es6-seed",
   "version": "1.0.0",
-  "description": "Angular ES6 seed project",
+  "description": "Angular ES6 ExpertTrack Project",
   "main": "public/app/bootstrap.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bamblack/ng-es6-seed.git"
+    "url": ""
   },
-  "author": "Ben Black <ben.black@outlook.com>",
-  "license": "MIT",
+  "author": "Gireesh Babu",
+  "license": "Apache 2",
   "bugs": {
-    "url": "https://github.com/bamblack/ng-es6-seed/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/bamblack/ng-es6-seed",
+  "homepage": "",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-less": "^3.0.5",
