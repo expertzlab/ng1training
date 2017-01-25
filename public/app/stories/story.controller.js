@@ -1,7 +1,9 @@
 class StoryController {
+
     constructor(){
-        alert('test');
+
     }
+
 }
 
 StoryController.$inject = [];

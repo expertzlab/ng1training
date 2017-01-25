@@ -6,4 +6,4 @@ import StoryModule from './stories/story.module';
 export default angular.module('Application', [
     GitHubUserModule.name,
     StoryModule.name
-]);
+])
