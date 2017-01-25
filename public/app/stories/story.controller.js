@@ -13,7 +13,8 @@ class StoryController {
 
         this._main.setCurrentStory = function (story) {
             console.log("current sotry "+ story.title);
-        }
+        };
+
 
     }
 
@@ -33,6 +34,15 @@ class StoryController {
 
     get main(){
         return this._main;
+    }
+
+    createStory() {
+
+        this._main.stories.push({
+            title:'New Story',
+            description:"Not provided"
+        });
+
     }
 }
 

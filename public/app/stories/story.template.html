@@ -1,26 +1,31 @@
-<div class="col-md-4">
-    <div class="story">Story Listing</div>
-    <div>
+<div class="col-md-4 card" style="width:60rem;">
+    <div class="h3">Story Listing</div>
+    <div class="card-block">
        Hello {{sc.name}} <input type="text" ng-model="sc.name"> </input>
     </div>
 
 
-    <div ng-init="customers=[{n:'Sam'},{n:'Ram'},{n:'Veena'},{n:'Reena'}]">
+    <div class="list-group" ng-init="customers=[{n:'Sam'},{n:'Ram'},{n:'Veena'},{n:'Reena'}]">
         <ul>
-            <li ng-repeat="cust in customers| filter:nameText | orderBy:'n'">{{cust.n | uppercase}}</li>
+            <li class="list-group-item-text" ng-repeat="cust in customers| filter:nameText | orderBy:'n'">{{cust.n | uppercase}}</li>
         </ul>
     </div>
 
     <input type="text" ng-model="nameText"/>
-
+    <hr />
     <div class="col-md-4">
         <h2>Stories</h2>
-        <div class="callout"
+        <div class="card-block"
              ng-repeat="story in sc.main.stories"
              ng-click="sc.main.setCurrentStory(story)">
             <h4>{{story.title}}</h4>
             <p>{{story.description}}</p>
         </div>
+
+        <br/>
+        <a class="btn btn-primary" ng-click="sc.createStory()">
+            <span class="glyphicon glyphicon-plus"></span>
+        </a>
     </div>
 
 </div>
