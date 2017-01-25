@@ -4,6 +4,7 @@ class StoryController {
 
         this._name = "myName";
 
+
     }
 
     set name(name){

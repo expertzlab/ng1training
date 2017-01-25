@@ -4,4 +4,15 @@
        Hello {{sc.name}} <input type="text" ng-model="sc.name"> </input>
     </div>
 
+
+    <div ng-init="customers=[{n:'Sam'},{n:'Ram'},{n:'Veena'},{n:'Reena'}]">
+        <ul>
+            <li ng-repeat="cust in customers| filter:nameText | orderBy:'n'">{{cust.n | uppercase}}</li>
+        </ul>
+    </div>
+
+    <input type="text" ng-model="nameText"/>
+
 </div>
+
+
