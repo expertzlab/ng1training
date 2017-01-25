@@ -1,3 +1,9 @@
 <div>
-    Task tmplate loaded..
+    <p class="h3">Tasks</p>
+    <ul>
+        <li ng-repeat="task in tc.tasks">
+           Name: {{task.name}} <br/>
+           Assignee: {{task.assignee}}
+        </li>
+    </ul>
 </div>

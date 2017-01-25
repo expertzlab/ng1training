@@ -44,5 +44,8 @@
   "github:angular/bower-angular@1.5.0": {},
   "github:twbs/bootstrap@3.3.7": {
     "jquery": "jspm:jquery"
+  },
+  "github:angular/bower-angular-route@1.6.1": {
+    "angular": "jspm:angular@^1.3.0"
   }
 }
