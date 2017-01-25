@@ -13,6 +13,16 @@
 
     <input type="text" ng-model="nameText"/>
 
+    <div class="col-md-4">
+        <h2>Stories</h2>
+        <div class="callout"
+             ng-repeat="story in sc.main.stories"
+             ng-click="sc.main.setCurrentStory(story)">
+            <h4>{{story.title}}</h4>
+            <p>{{story.description}}</p>
+        </div>
+    </div>
+
 </div>
 
 
